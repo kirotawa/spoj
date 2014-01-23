@@ -28,10 +28,9 @@ at+bac++cd+^*
 
 """
 
-def go(exp):
+def rpn(exp):
     symbols = []
     parentesis = []
-    var = []
     result = ''
     for i in exp:
         if i == '(':
@@ -47,6 +46,5 @@ def go(exp):
 
 
 n = input()
-
 for i in range(n):
     go(raw_input())
