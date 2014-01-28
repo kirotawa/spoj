@@ -30,13 +30,9 @@ at+bac++cd+^*
 
 def rpn(exp):
     symbols = []
-    parentesis = []
     result = ''
     for i in exp:
-        if i == '(':
-            parentesis.append('(')
         if i == ')':
-            parentesis.pop()
             result += symbols.pop()
         if i in string.letters:
             result += i
@@ -47,4 +43,4 @@ def rpn(exp):
 
 n = input()
 for i in range(n):
-    go(raw_input())
+    rpn(raw_input())
